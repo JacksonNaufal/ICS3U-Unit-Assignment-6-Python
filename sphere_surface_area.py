@@ -7,12 +7,12 @@
 import math
 
 
-def grade_function(radius):
+def surface_area_function(radius):
 
     # process
-    volume = math.pi * (radius**2) * 4
+    surface_area = math.pi * (radius**2) * 4
 
-    return volume
+    return surface_area
 
 
 def main():
@@ -24,13 +24,13 @@ def main():
     try:
         user_radius_int = float(user_radius)
         function_grade = round(
-            grade_function(
+            surface_area_function(
                 radius=user_radius_int,
             ),
             2,
         )
 
-        print("The volume is {0} mm³".format(function_grade))
+        print("The surface area of a sphere is {0} mm²".format(function_grade))
 
     except Exception:
         print("Not An Integer")
